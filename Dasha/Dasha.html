@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head class="header">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <img class="image" src="img/Dasha1.jpg" width="550" height="50" />
+   
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+    <header>
+    <h2 class="sectionHead">Hello, I'm Dasha!</h2>
+    <h3 class="sectionHead HeadTwo">And this is my web site.</h3>
+    
+</header>
+
+<section class="about container">
+    <div class="about-content">
+        
+        <br><p5 class="aboutP5">Curriculum vitae</p5></br>
+        <p6 class="aboutP6 textRes">Personal Details</p6>
+            <section class="skills textRes">
+                <li>Darya Voronkina</li>
+                <li>Date of birth: 14/10/2000 </li>
+                <li>Phone: 89658219617</li>
+                <li>E-mail: voronik1801@yandex.ru </li>
+             </section>
+        <p6 class="aboutP6 textRes">Objectives:</p6>
+             <section class="skills textRes">
+                <li>To contribute professional skills to achieving your company's goals.</li>
+            </section>
+    </div>
+    </section>
+    <section class="about container">
+        <div class="about-content">
+        <p6 class="aboutP6 textRes"> Information about education:</p6>
+        <section class="skills textRes aboutP6Res">
+            <li>Incomplete higher education in the specialty "mathematical support and administration of information systems" at the faculty of applied mathematics and computer science of Novosibirsk State Technical University (year of graduation – 2022, full - Time education)
+                </li>
+            <li>Incomplete higher education in the specialty "Computer technologies of modeling and data analysis" at the faculty of applied mathematics and computer science of Novosibirsk State Technical University (year of graduation – 2024, form of study - full-time)
+                </li>
+        </section>
+        <p6 class="aboutP6 textRes">Skills:</p6>
+        <section class="skills textRes">
+            <li>IT: C++, C#, html, css, Windows, Linux </li>
+            <li>Languages: Russian, English</li>
+            <li>Additional: hard work, fast learning, punctuality</li>
+        </section>
+        </div>
+        
+    </section>
+
+    <section class="commenting">
+        <style>
+              * {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+                input, textarea
+                {
+                    width: 100 px;
+                    margin: 20px;
+                    font-size: 15px;
+                }
+                label{
+                    font-size: 25px;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                }
+        </style>
+        <form action="" method="POST">
+                
+            <label>Name:</label>
+            <input type="text"  name="username" required placeholder="Enter your name">
+        
+            <label>Comment:</label>
+            <textarea type="text" cols= "15" rows="10" name="comment" required placeholder="Enter your comment"></textarea>
+            <input type = "submit" name = "but" id="button">
+        </form>
+
+        <form>
+            <label>Комментарии:</label>
+            <?
+                $comments = $connect->query("SELECT * FROM intocomments ORDER BY data DESC");
+                $comments = $comments->fetchAll(PDO::FETCH_ASSOC);
+
+                foreach ($comments as $comment) {
+            ?>
+                <p><?="{$comment['data']} {$comment['username']} оставил(а) комментарий: {$comment['commment']}"?></p>
+            <? } ?>
+        </form>
+</section>
+</body>
+</html>
