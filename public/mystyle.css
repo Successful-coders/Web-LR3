@@ -1,0 +1,164 @@
+body{
+  margin: 0;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 25px;
+  line-height: 1.6;
+  color: black;
+}
+
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+.sectionHead {
+width: 100%;
+margin-bottom: 20px;
+font-size: 85px;
+line-height: 80px;
+padding-top: 20px;
+padding-left: 200px;
+color: white;
+font-family: 'Kaushan Script', cursive;
+}
+
+.HeadTwo {
+font-size: 80px;
+padding-top: 0px;
+padding-left: 700px;
+color: white;
+
+}
+.commenting{
+line-height: 20px;
+font-family: "Montserrat";
+text-align: center;
+background-color: white;
+color: black;
+font-size: medium;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 640px;
+  min-height: 80vh;
+  margin: 0;
+  background-color: #B8B58F ;
+  font-size: 30px;
+  line-height: 18px;
+  color:white;
+  position: relative;
+}
+.image{
+display: block;
+margin: auto;
+width: 550px;
+height: 650px;
+}
+a{
+  font-size: 40px;
+  text-align: center;
+  font-family: "Montserrat";
+  color: wheat;
+}
+.aboutP5 {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: "Montserrat";
+  color:  white;
+  padding: 0px
+}
+
+.aboutP6 {
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: "Montserrat";
+  color:  white
+}
+
+.container1{
+  width: 1500px;
+  margin: auto;
+}
+.about-content p {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+li {
+ font-size: 16px;
+ font-style: initial;
+ color: white;
+ font-family: "Montserrat";
+}
+
+.about-content {
+  width: 950px;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin-bottom: 32px;
+ }
+
+.page-footer {
+  margin-top: auto;
+  color: black;
+  background-color: wheat;
+}
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  color: black;
+  background-color:wheat;
+}
+.page-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.aboutP6Res {
+  padding-left: 0px;
+}
+
+.abouth6index {
+  line-height: 10px;
+}
+
+.styleSh {
+  font-family: "Montserrat";
+}
+
+.style5 {
+  color: white;
+}
+.arrow-left {
+  position: absolute;
+  z-index: 99;
+  top: 10%;
+  left: 1%;
+  transform: translate(-8%, -50%);
+  border-image-repeat: unset;
+}
+.arrow-right {
+  position: absolute;
+  justify-content: right;
+  z-index: 99;
+  top: 50%;
+  right: 1%;
+  transform: translate(-1%, -50%);
+}
