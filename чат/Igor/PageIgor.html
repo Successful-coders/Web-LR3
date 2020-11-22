@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head class="header">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
+<body >
+    <section class="page">
+    <style>
+      body {
+    margin: 0;
+    padding-top: 30px;
+    font-size: 25px;
+    line-height: 1.6;
+    color: black;
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    body::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+        top: 0;
+    }
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    z-index: 100;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.commenting{
+    line-height: 20px;
+    font-family: "Montserrat";
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: medium;
+  }
+@font-face {
+    font-family: 'pixelFont';
+    src: url('mainfont-webfont.woff2') format('woff2'), url('mainfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sectionHead {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 75px;
+    font-family: 'pixelFont', Arial, sans-serif;
+    line-height: 80px;
+    padding-top: 20px;
+    padding-left: 200px;
+    color: white;
+}
+
+.HeadTwo {
+  font-size: 80px;
+  padding-top: 0px;
+  padding-left: 700px;
+  color: white;
+
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-width: 640px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black ;
+    font-size: 30px;
+    line-height: 18px;
+    color: rgb(180, 175, 175);
+    position: relative;
+}
+
+.profileImage {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 80%;
+}
+
+.reportDoc {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    .reportDoc .reportDocLink {
+        font-size: 40px;
+        color: wheat;
+    }
+
+.aboutP5 {
+    font-weight: bolder;
+    font-size: 40px;
+    color:  white;
+    padding: 0px
+  }
+
+.githubLink
+{
+    color: wheat;
+}
+
+.aboutP6 {
+    font-weight: bolder;
+    font-size: 25px;
+    color: white
+}
+
+.container{
+    width: 1500px;
+    margin: auto;
+}
+.about-content p {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+ 
+li {
+   font-size: 18px;
+   font-style: initial;
+   color: white;
+ }
+
+.about-content {
+    width: 950px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+
+.about {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-bottom: 32px;
+   }
+
+.page-footer .container {
+    font-family: pixelFont, Arial, sans-serif;
+    position: relative;
+    padding-right: 16px;
+    padding-top: 10px;
+    left: 0;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+    text-align: end;
+    font-size: 20px;
+}
+
+.page-footer p {
+    margin: 0;
+    padding: 0;
+  }
+
+.aboutP6Res {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  
+.abouth6index {
+    line-height: 10px;
+  }
+  
+.style5 {
+    color: white;
+  }
+
+.arrow-left {
+    position: absolute;
+    z-index: 99;
+    top: 10%;
+    left: 1%;
+    transform: translate(-8%, -50%);
+    border-image-repeat: unset;
+  }
+
+.arrow-right {
+    position: absolute;
+    justify-content: right;
+    z-index: 99;
+    top: 50%;
+    right: 1%;
+    transform: translate(-1%, -50%);
+  }
+
+</style>
+
+        <header>
+            <h2 class="sectionHead">Hey, I'm Igor! </h2>
+            <h3 class="sectionHead">And I love to make games</h3>
+        </header>
+
+        <section class="about container">
+            <div class="about-content">
+
+                <div class="reportDoc">
+                    <a class="reportDocLink" href="report.html"> Report on laboratory work.</a>
+                </div>
+
+                <br><p5 class="aboutP5">Curriculum vitae</p5></br>
+                <p6 class="aboutP6 textRes">Personal Details:</p6>
+                <section class="skills textRes">
+                    <li>Igor Kondratev</li>
+                    <li>GitHub: <a class="githubLink" href="https://github.com/wingsmight">github.com/wingsmight</a></li>
+                    <li>Date of birth: 7/5/2001 </li>
+                    <li>Phone: +7-913-480-7883</li>
+                    <li>E-mail: wingsmight@gmail.com </li>
+                </section>
+            </div>
+            </section>
+            <section class="about container">
+                <div class="about-content">
+                    <p6 class="aboutP6 textRes"> Education:</p6>
+                    <section>
+                        <li>2018 - 2022 &nbsp; &nbsp; &nbsp; &nbsp; Novosibirsk State Technical University Bachelor’s degree of applied math and computer science </li>
+                    </section>
+                    <p6 class="aboutP6 textRes"> Professional experience:</p6>
+                    <section>
+                        <li>Spring 2020 – present &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Development of the game “Let’s talk”. GitHub link: <a class="githubLink" href="https://github.com/guleviz/lets-talk">github.com/guleviz/lets-talk</a></li>
+                        <li>Winter 2020 – spring 2020 &nbsp; &nbsp; &nbsp; &nbsp; Development of the app “Make Day”. GitHub link: <a class="githubLink" href="https://github.com/wingsmight/MakeDay">github.com/wingsmight/MakeDay</a></li>
+                        <li>Winter 2019 – spring 2020 &nbsp; &nbsp; &nbsp; &nbsp; Development of the game “Swipe warrior”. GitHub link: <a class="githubLink" href="https://github.com/wingsmight/swiperidle">github.com/wingsmight/swiperidle</a></li>
+                        <li>Winter 2019 – summer 2019 &nbsp; &nbsp; &nbsp;Development of the app “Audio Bible”. GitHub link: <a class="githubLink" href="https://github.com/wingsmight/BibleLoopMain">github.com/wingsmight/BibleLoopMain</a></li>
+                        <li>Summer 2018 – winter 2018 &nbsp; &nbsp; &nbsp;Development of the game “Jog A cube”. GitHub link: <a class="githubLink" href="https://github.com/wingsmight/jogacube">github.com/wingsmight/jogacube</a></li>
+                    </section>
+                    <p6 class="aboutP6 textRes">Skills:</p6>
+                    <section class="skills textRes">
+                        <li>Expert in C#</li>
+                        <li>Proficient in Visual studio, Unity</li>
+                        <li>Proficient in Visual studio, Unity</li>
+                        <li>Fluency in Git (console) / GitHub </li>
+                        <li>Operate terminal on Linux/Windows/Mac</li>
+                        <li>Write design document</li>
+                        <li>Fluency in Adobe Photoshop, Adobe Illustrator </li>
+                        <li>Able to type 120 WPM</li>
+                        <li>Languages: Russian native, English B1+</li>
+                    </section>
+                    <p6 class="aboutP6 textRes">Hobbies:</p6>
+                    <section class="skills textRes">
+                        <li>Running, workout</li>
+                        <li>Gaming</li>
+                    </section>
+                </div>
+                
+            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-center" style="font-family: Montserrat">
+                            Оставьте свой комментарий:
+                        </h2>
+                    </div>
+                    <div class="col-lg-6" style="font-family: Montserrat">
+                        <div id="all_mess"></div>
+                    </div>
+                    <div class="col-lg-6">
+                            <form id= "messForm">
+                                    <div class="form-group"style="font-family: Montserrat">
+                                      <label for="comment-name">Имя:</label>
+                                      <input type="text" class="form-control" id="comment-name"  placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group"style="font-family: Montserrat">
+                                      <label for="comment-body">Комментарий:</label>
+                                      <textarea type="text" class="form-control" id="comment-body" placeholder="Enter yor comment"></textarea>
+                                    </div>
+                                    <div class="form-group form-check text-right"style="font-family: Montserrat">
+                                            <button type="submit" id="comment-add" class="btn btn-primary">Добавить комментарий</button>
+                                    </div>                   
+                                  </form>
+                    </div>
+                </div>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        
+          <script>
+                var min = 1;
+                var max = 6;
+                var random = Math.floor(Math.random() * (max - min)) + min;
+        
+                var alertClass;
+                switch (random) {
+                    case 1:
+                        alertClass = 'secondary';
+                        break;
+                    case 2:
+                        alertClass = 'danger';
+                        break;
+                    case 3:
+                        alertClass = 'success';
+                        break;
+                    case 4:
+                        alertClass = 'warning';
+                        break;
+                    case 5:
+                        alertClass = 'info';
+                        break;
+                    case 6:
+                        alertClass = 'light';
+                        break;
+                }
+        
+                // Функция для работы с данными на сайте
+                $(function() {
+                    // Включаем socket.io и отслеживаем все подключения
+                    var socket = io.connect();
+                    // Делаем переменные на:
+                    var $form = $("#messForm"); // Форму сообщений
+                    var $name = $("#comment-name"); // Поле с именем
+                    var $textarea = $("#comment-body"); // Текстовое поле
+                    var $all_messages = $("#all_mess"); // Блок с сообщениями
+        
+                    // Отслеживаем нажатие на кнопку в форме сообщений
+                    $form.submit(function(event) {
+                        // Предотвращаем классическое поведение формы
+                        event.preventDefault();
+                        // В сокет отсылаем новое событие 'send mess',
+                        // в событие передаем различные параметры и данные
+                        socket.emit('send mess', {mess: $textarea.val(), name: $name.val(), className: alertClass});
+                        // Очищаем поле с сообщением
+                        $textarea.val('');
+                    });
+        
+                    // Здесь отслеживаем событие 'add mess',
+                    // которое должно приходить из сокета в случае добавления нового сообщения
+                    socket.on('add mess', function(data) {
+                        // Встраиваем полученное сообщение в блок с сообщениями
+                        // У блока с сообщением будет тот класс, который соответвует пользователю что его отправил
+                        $all_messages.append("<div class='alert alert-" + data.className + "'><b>" + data.name + "</b>: " + data.mess + "</div>");
+                    });
+        
+                });
+            </script>
+            
+                
+    </section>
+</section>
+</body>
+</html>
